@@ -38,3 +38,32 @@ toc: true
 * You can branch which is like multiverses without affecting the original history
 * Merging branches or synchronizing the code
 
+## Git environments
+
+* HEAD always points to the current reality/branch
+
+### 3 places to move files
+
+* Working -- files look like what they did in previous commit
+* Staging -- a way to queue up changes before committing (`add`)
+* Committing -- once moved using this, a new log entry is created
+
+### File states
+
+* tracked -- anyhting staged that is different than last commit
+* untracked files -- anything else
+
+### tracked files
+
+* unmodified
+* modified
+* staged -- moved into staging environment
+
+### Restoring files
+
+Used to discard any 'staged' changes of files
+
+* `git restore <filename>` -- restore a file
+* `git restore .` -- restore entire directory
+
+
