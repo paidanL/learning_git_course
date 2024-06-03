@@ -1,0 +1,40 @@
+---
+title: "[Notes] Linkedin Learning: Git"
+author: "Aidan Leib"
+format: pdf
+toc: true
+
+---
+
+# Working with git
+
+## Version Control
+
+* Allows you to track changes
+* project history
+* backup and restore
+
+### Collaboration
+
+* allows devs to share code
+* can track who did what and when
+
+### Centralized Version control
+
+* storage of files and logs in a centralized server
+* retrieval from server
+* E.x: Apache sub version or SVN
+
+### Distributed Version COntrol
+
+* Cloning code on own machine
+* local version = "working copy"
+* push/pull copies to main repo
+
+## WHat is git?
+
+* version control (like a time machine except you can change history)
+* check points are like commits
+* You can branch which is like multiverses without affecting the original history
+* Merging branches or synchronizing the code
+
