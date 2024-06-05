@@ -66,4 +66,43 @@ Used to discard any 'staged' changes of files
 * `git restore <filename>` -- restore a file
 * `git restore .` -- restore entire directory
 
+## Differences
 
+* `git diff`
+
+> `git log --oneline` for viewing a cleaner log
+
+## changing history
+
+### amending
+
+Instead of adding a new commit to fix something in a previous commit, you can use the `--amend` flag
+
+* `git commit --amend -m "new commit message" -- to update new commit message
+* `git commit --amend --no-edit" -- to keep old commit message
+
+### resetting
+
+* `git reset [hash]` -- unstages the changes after the reset. moves HEAD back to another commit
+* doesn't delte the files, but does rewind the commits
+
+> `git reset --hard ae75ce0` -- does delete any commits before 'ae75ce0' and modifies the files
+
+### rebasing
+
+One way to move changes from one branch to another.
+
+* `git rebase <branch>/<commit>`
+* `git rebase --interactive <branch>/<commit>` -- easiest/safeset way to rebase
+* `git rebase -i HEAD~#` -- moves back to a certain number of commits
+* `git rebase -i --root`
+
+## Branches
+
+### copying a branch
+
+* `git switch -c NAME` -- copies the current branch into new branch NAME
+
+### merging
+
+* `git merge <branch>` -- merges changes from `<branch>` into current branch
