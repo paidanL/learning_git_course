@@ -106,3 +106,25 @@ One way to move changes from one branch to another.
 ### merging
 
 * `git merge <branch>` -- merges changes from `<branch>` into current branch
+
+### deleting branch
+
+* `git branch --delete NAME`
+* `git branch -d NAME` -- as long as branches are free of conflicts
+* `git branch -D NAME` -- ignores conflicts and just deletes branch
+
+::: {.callout-note}
+## Git Flow
+
+* create a branch for a feature/fix
+* make changes on that branch
+* merge branch into `main`
+* delete the old branch
+:::
+
+## Merge Conflicts
+
+These happen when you're trying to merge two branches and you or somebody else
+have made changes to the same item(s).
+
+* `git merge <branch>` -- merges changes from `<branch>` into current branch
